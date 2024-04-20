@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manush's Porfolio</title>
+    <link rel="icon" href="m..png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Add custom styles */
+        .active-link {
+            font-weight: bold;
+        }
+
+        /* Add custom styles for the sticky navbar */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            /* Ensure navbar stays on top */
+        }
+
+        .img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .hover-icon {
+            display: none;
+        }
+
+        .nav-link:hover .icon {
+            display: none;
+        }
+
+        .nav-link:hover .hover-icon {
+            display: block;
+        }
+
+        .icon,
+        .hover-icon {
+            width: 34px;
+            height: 34px;
+        }
+        @media (max-width: 640px) {
+            .icon,
+            .hover-icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-800 text-white">
+
+    <header id="navbar" class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <img src="Manush..png" alt="Icon" class="h-2 md:h-4 lg:h-6">
+            <nav>
+                <ul class="flex space-x-10">
+                    <li>
+                        <a href="https://www.linkedin.com/in/manusha-upekshana/" class="nav-link">
+                            <img src="linkedin1.svg" alt="LinkedIn Logo" class="w-16 h-16 mx-auto mb-2 icon">
+                            <img src="linkedin2.svg" alt="LinkedIn Hover" class="w-16 h-16 mx-auto mb-2 hover-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/manu5h" class="nav-link">
+                            <img src="github1.svg" alt="github Logo" class="w-16 h-16 mx-auto mb-2 icon">
+                            <img src="github2.svg" alt="github Hover" class="w-16 h-16 mx-auto mb-2 hover-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/manu5h" class="nav-link">
+                            <img src="behance1.svg" alt="behance Logo" class="w-16 h-16 mx-auto mb-2 icon">
+                            <img src="behance2.svg" alt="behance  Hover" class="w-16 h-16 mx-auto mb-2 hover-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:manushashan022@gmail.com" class="nav-link">
+                            <img src="gmail1.svg" alt="gmail Logo" class="w-16 h-16 mx-auto mb-2 icon">
+                            <img src="gmail2.svg"gmail Hover" class="w-16 h-16 mx-auto mb-2 hover-icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- About Section -->
+<section id="about" class="py-12 mt-20"> <!-- Added mt-20 to add space between navbar and body -->
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center">
+        <!-- Flexbox layout -->
+        <div class="md:w-1/2 md:pr-8"> <!-- Left side for text -->
+            <div class="text-center md:text-right mb-4">
+                <!-- Align text to the right on medium screens and above -->
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-semibold mb-2">Hi, I’m</h2>
+                <h2 class="text-4xl md:text-7xl lg:text-10xl font-semibold mb-2"><span class="text-blue-500 font-bold">Manusha</span></h2>
+                <h2 class="text-4xl md:text-7xl lg:text-10xl font-semibold mb-2"><span class="text-blue-500 font-bold">Upekshana</span></h2>
+                <br></br>
+                <h2 class="text-1xl md:text-2xl lg:text-4xl font-semibold mb-2"><span id="dynamic-text"></span></h2>
+                <br></br>
+                <button id="resume-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Resume</button>
+            </div>
+        </div>
+        <div class="md:w-1/2"> <!-- Right side for picture -->
+            <div class="h-48 w-48 md:h-auto md:w-1/2 overflow-hidden" style="box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.5);">
+                <img src="profile picture.jpg" alt="Profile picture"
+                    class="object-cover object-center h-auto w-full">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-4">Technical Skills</h2>
+            <br></br>
+            <!-- Programming -->
+            <div class="border border-gray-300 rounded-md mb-8 md:flex md:justify-between">
+                <div class="text-center mb-8 md:w-1/3">
+                    <h3 class="text-xl font-semibold mb-8">Programming</h3>
+                    <div class="flex justify-center">
+                        <div class="flex flex-col items-center mr-8">
+                            <img src="java-logo.svg" alt="Java Logo" class="w-16 h-16 mx-auto mb-2">
+                            <p class="text-l font-weight mb-2">Java</p>
+                        </div>
+                        <div class="flex flex-col items-center mr-8">
+                            <img src="python-logo.svg" alt="Python Logo" class="w-16 h-16 mx-auto mb-2">
+                            <p class="text-l font-weight mb-2">Python</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="dart-programming-language-icon.svg" alt="Dart Logo"
+                                class="w-16 h-16 mx-auto mb-2">
+                            <p class="text-l font-weight mb-2">Dart</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile and Web -->
+                <div class="text-center mb-8 md:w-1/2 md:border-l md:border-r border-gray-300">
+                    <h3 class="text-xl font-semibold mb-8">Mobile and Web</h3>
+                    <div class="flex justify-center">
+                        <div class="flex flex-col items-center mr-8">
+                            <img src="flutter-icon.svg" alt="Flutter Logo" class="w-16 h-16 mx-auto mb-2">
+                            <p class="text-l font-weight mb-2">Flutter</p>
+                        </div>
+                        <div class="flex flex-col items-center mr-8">
+                            <img src="html-icon.svg" alt="HTML Logo" class="w-16 h-16 mx-auto mb-2">
+                            <p class="text-l font-weight mb-2">HTML</p>
+                        </div>
+                        <div class="flex flex-col items-center mr-8">
+                            <img src="icons8-spring-boot.svg" alt="Spring Logo" class="w-16 h-16 mx-auto mb-2">
+                            <p class="text-l font-weight mb-2">SpringBoot</p>
+                        </div>
+                        <div class="flex flex-col items-center mr-8">
+                            <img src="css-icon.svg" alt="CSS Logo" class="w-16 h-16 mx-auto mb-2">
+                            <p class="text-l font-weight mb-2">CSS</p>
+                        </div>
+                        <div class="flex flex-col items-center mr-8">
+                            <img src="js-logo.svg" alt="JavaScript Logo" class="w-16 h-16 mx-auto mb-2">
+                            <p class="text-l font-weight mb-2">JavaScript</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="php-logo.svg" alt="PHP Logo" class="w-16 h-16 mx-auto mb-2">
+                            <p class="text-l font-weight mb-2">PHP</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Design -->
+                <div class="text-center md:w-1/3">
+                    <h3 class="text-xl font-semibold mb-8">Design</h3>
+                    <div class="flex justify-center">
+                        <div class="flex flex-col items-center mr-8">
+                            <img src="figma-logo.svg" alt="Figma Logo" class="w-16 h-16 mx-auto mb-2">
+                            <p class="text-l font-weight mb-2">Figma</p>
+                        </div>
+                        <div class="flex flex-col items-center mr-8">
+                            <img src="pr-logo.svg" alt="Premier Pro Logo" class="w-16 h-16 mx-auto mb-2">
+                            <p class="text-l font-weight mb-2">Premier Pro</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="icons8-davinci-resolve.svg" alt="DaVinci Resolve Logo"
+                                class="w-16 h-16 mx-auto mb-2">
+                            <p class="text-l font-weight mb-2">DaVinci Resolve</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+            <br></br>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 relative">
+                    <h2
+                        class="absolute top-0 left-0 bg-blue-800 text-white px-4 py-2 font-semibold rounded-tr-lg rounded-bl-lg">
+                        ShapeShift</h2>
+                    <div class="carousel">
+                        <img class="carousel-slide" src="featured graphic.jpg" alt="Image 1">
+                    </div>
+                    <p class="text-gray-600">ShapeShift is a fitness management app created by a team of
+                        five second-year students. It tackles the challenges of outdated
+                        gym operations and the difficulty in accessing personalized
+                        fitness guidance. The app simplifies gym routines and facilitates
+                        connections with certified fitness instructors. Through its
+                        innovative features, ShapeShift aims to enhance health and
+                        wellness among users, bringing about positive changes in the
+                        fitness industry in Sri Lanka.</p>
+                    <p class="text-black font-bold">
+                        Technologies: Flutter(Dart) | Spring Boot(Java) | TensorFlow(Python) | AWS
+                    </p>
+
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 relative">
+                    <h2
+                        class="absolute top-0 left-0 bg-blue-800 text-white px-4 py-2 font-semibold rounded-tr-lg rounded-bl-lg">
+                        Pixilla</h2>
+                    <div class="carousel">
+                        <img class="carousel-slide" src="pixia cover image.png" alt="Image 1">
+                    </div>
+                    <p class="text-gray-600">Pixilla is a collaborative website developed in the first year using HTML,
+                        CSS, and JavaScript. As a group project, it showcases the team's skills in web development,
+                        incorporating these technologies to create an interactive and visually appealing online
+                        platform.</p>
+                    <p class="text-black font-bold">
+                        Technologies: Html | CSS | JavaScript
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 relative">
+                    <h2
+                        class="absolute top-0 left-0 bg-blue-800 text-white px-4 py-2 font-semibold rounded-tr-lg rounded-bl-lg">
+                        Coin Keeper (ongoing)</h2>
+                    <div class="carousel">
+                        <img class="carousel-slide" src="coin keeper featured graphic.jpg" alt="Image 3">
+                    </div>
+                    <p class="text-gray-600">Coin Keeper is a personal finance management application. It helps users
+                        efficiently track their expenses, manage budgets, and analyze spending patterns. The app allows
+                        users to create expense sheets, categorize transactions, set financial goals, and visualize
+                        their financial data through intuitive charts. With its user-friendly interface and robust
+                        features, Coin Keeper empowers individuals to take control of their finances and make informed
+                        financial decisions..</p>
+                    <p class="text-black font-bold">
+                        Technologies: Flutter
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 flex justify-end">
+            <!-- Social media links on the right -->
+            <a href="https://www.linkedin.com/in/manusha-upekshana/"class="text-white mx-2 hover:text-blue-400">LinkedIn</a>
+            <a href="https://github.com/manu5h" class="text-white mx-2 hover:text-blue-400">Git Hub</a>
+            <a href="https://www.behance.net/manu5h" class="text-white mx-2 hover:text-blue-400">Behance</a>
+            <a href="mailto:manushashan022@gmail.com" class="text-white mx-2 hover:text-blue-400">E-mail</a>
+
+
+        </div>
+        <!-- Line -->
+        <hr class="border-gray-600 my-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Manush. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Script Section -->
+    <script>
+        // Add event listener to the "Resume" button
+        document.getElementById("resume-btn").addEventListener("click", function () {
+            // Redirect to the specified link
+            window.location.href = "https://drive.google.com/file/d/1Enf1Ts-_fGIXBCMjBJ1I2S41TOFITCDR/view?usp=sharing";
+        });
+
+        // Add scroll event listener to highlight current section in the navbar
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('navbar');
+            var sections = document.querySelectorAll('section');
+            var scrollPosition = window.scrollY;
+
+            sections.forEach(function (section) {
+                var top = section.offsetTop;
+                var bottom = top + section.offsetHeight;
+
+                if (scrollPosition >= top && scrollPosition < bottom) {
+                    var currentId = section.id;
+                    var currentLink = document.querySelector('nav ul li a[href="#' + currentId + '"]');
+                    // Remove active class from all links
+                    document.querySelectorAll('nav ul li a').forEach(function (link) {
+                        link.classList.remove('active-link');
+                    });
+                    // Add active class to the current link
+                    currentLink.classList.add('active-link');
+                }
+            });
+
+            // Add or remove sticky class based on scroll position
+            if (scrollPosition >= navbar.offsetTop) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+
+        // Text to display one by one
+        var roles = ["Software Engineer Undergraduate_", "Mobile Developer_", "UI/UX Designer_", "Video Editor_", "Tech Enthusiast_"];
+
+        var index = 0; // Index to keep track of the current role
+        var speed = 100; // Speed of typing animation in milliseconds
+        var delay = 1000; // Delay between typing of each role in milliseconds
+
+        function typeRole() {
+            var role = roles[index];
+            var text = ""; // Initialize an empty string
+
+            // Type each character of the role one by one
+            for (var i = 0; i < role.length; i++) {
+                setTimeout(function (i) {
+                    return function () {
+                        text += role.charAt(i);
+                        document.getElementById("dynamic-text").innerText = text;
+                    };
+                }(i), speed * i);
+            }
+
+            // Increment index for the next role
+            index++;
+
+            // Loop through roles array
+            if (index >= roles.length) {
+                index = 0; // Reset index if it exceeds the length of the array
+            }
+
+            // Call typeRole function recursively after delay
+            setTimeout(typeRole, delay + speed * role.length);
+        }
+
+        // Start the typing animation
+        typeRole();
+    </script>
+</body>
+
+</html>
